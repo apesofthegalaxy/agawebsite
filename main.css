@@ -1,0 +1,613 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+@font-face {
+  font-family: SpaceQuest;
+  src: url(SpaceQuest-Xj4o.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: SpaceQuestItalic;
+  src: url(SpaceQuestItalic-g8jY.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: SpaceFR;
+  src: url(spacefr.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: LaserCorpsItalic;
+  src: url(LaserCorpsItalic-d95aE.otf);
+  font-weight: 700;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #383838;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1a1a1a;
+}
+@keyframes cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+@keyframes typing {
+  from {
+    width: 100%;
+  }
+  90%,
+  to {
+    width: 0;
+  }
+}
+@keyframes slide {
+  33.3333333333% {
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
+  to {
+    font-size: 0;
+    letter-spacing: 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+.banna {
+  margin-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.aga {
+  padding: 0 50px;
+  font-size: 50px;
+  color: #f7d931;
+}
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+.about {
+  margin: auto;
+  font-size: 120%;
+  width: 50%;
+  color: #e2e2e2;
+  padding: 10px;
+}
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 650%;
+  display: block;
+}
+.stars {
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
+  z-index: -1;
+}
+.twinkling {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
+    top center;
+  z-index: -1;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#navigation-container {
+  z-index: 100;
+  height: 50px;
+  overflow: hidden;
+  background-color: #1b1b1b;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+}
+ul {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: inherit;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  font-family: SpaceQuest;
+  padding: 5px 50px;
+}
+a:hover {
+  color: #ffda08;
+  transition: color 0.4s;
+}
+
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.text {
+  position: inherit;
+  text-align: center;
+  z-index: 2;
+  color: #bababa;
+  font-family: SpaceQuest;
+}
+.numbers {
+  margin-top: 10px;
+}
+.gif {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding: 10px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  transition: transform 1s;
+  width: 12.5%;
+}
+.gif:hover {
+  transition: 1s transform;
+  transform: scale(1.1);
+}
+.title {
+  margin-top: 150px;
+  font-size: 35px;
+  text-decoration: underline;
+  font-weight: bolder;
+  color: #fcfcfc;
+  margin-bottom: 35px;
+}
+.roadmap {
+  border-style: solid;
+  border-radius: 10%;
+  border-color: #fcfcfc;
+  border-width: 0.1ch;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: #006e51;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+.container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+.container.left {
+  left: 0;
+}
+.container.right {
+  left: 50%;
+}
+.container.right::after {
+  left: -8px;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #006e51;
+  z-index: 1;
+}
+.container.right::before {
+  left: 8px;
+}
+.container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  border: 2px solid #006e51;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #006e51;
+  z-index: 1;
+}
+.container.left .icon {
+  right: 56px;
+}
+.container.right .icon {
+  left: 56px;
+}
+.container .content {
+  padding: 30px 90px 30px 30px;
+  background: #bababa;
+  position: relative;
+}
+.container.right .content {
+  padding: 30px 30px 30px 90px;
+}
+.container .content h2 {
+  justify-content: center;
+  margin: 10px 0 10px 46px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #006e51;
+}
+.container {
+  width: 80%;
+  padding: 50px 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+.container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: #ccd1d9;
+  z-index: 1;
+}
+.timeline-block {
+  width: -webkit-calc(50% + 8px);
+  width: -moz-calc(50% + 8px);
+  width: calc(50% + 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both;
+}
+.timeline-block-right {
+  float: right;
+}
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+}
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #f5f7fa;
+  background: #4fc1e9;
+  margin-top: 10px;
+  z-index: 5;
+}
+.timeline-content {
+  width: 95%;
+  padding: 0 15px;
+  color: #666;
+}
+.timeline-content h3 {
+  color: #ffc811;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.timeline-content p {
+  width: 300px;
+  font-family: SpaceFR;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.5em;
+  word-spacing: 2px;
+  color: #ffeaea;
+}
+@media screen and (max-width: 768px) {
+  .container:before {
+    left: 8px;
+    width: 2px;
+  }
+  .timeline-block {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .timeline-block-right {
+    float: none;
+  }
+  .timeline-block-left {
+    float: none;
+    direction: ltr;
+  }
+}
+.grid-container {
+  display: inline-grid;
+  grid-column-gap: 50px;
+}
+div.grid {
+  margin: 1em auto 5em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5em;
+  max-width: 1140px;
+}
+div.grid2 {
+  margin-bottom: 0;
+  margin: 0 auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5em;
+  max-width: 1140px;
+}
+div.main--card {
+  perspective: 800px;
+  transform-style: preserve-3d;
+  position: relative;
+  height: 20em;
+  border-radius: 10px;
+}
+div.img__wrapper {
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+}
+.pp {
+  width: 250px;
+}
+div.name {
+  font-family: SpaceQuest;
+  color: #f5f7fa;
+  font-size: 3em;
+  text-align: center;
+}
+div.name:hover {
+  color: #1151b1;
+  transition: 1s color;
+}
+div.titles {
+  font-family: SpaceQuest;
+  color: #acacac;
+  margin-top: 0.5em;
+  text-align: center;
+}
+div.titles:hover {
+  transition: 1s color;
+  color: #6b87b1;
+}
+body {
+  color: #fff;
+  background: #fcfcfc;
+  font-family: SpaceQuest;
+  overflow-x: hidden;
+}
+.faq-content {
+  margin: 0 auto;
+}
+.faq-question {
+  padding: 20px 0;
+  border-bottom: 5px dotted rgb(91, 140, 214);
+}
+.panel-title {
+  color: #fff;
+  font-family: SpaceQuestItalic;
+  font-size: 20px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+.panel-content {
+  font-size: 20px;
+  padding: 0 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.panel:checked ~ .panel-content {
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 42px;
+  line-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.panel {
+  display: none;
+}
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 15em;
+  margin: 0 auto;
+  font-size: 400%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+.anim-typewriter {
+  animation: typewriter 1s steps(30) 0.5s 1 normal both,
+    blinkTextCursor 0.5s steps(30) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11.5em;
+  }
+}
