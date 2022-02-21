@@ -10,7 +10,7 @@ $(document).scroll(function() {
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 900) {
+    if (y > 970) {
       $('#phase2').fadeIn();
     } else {
       $('#phase2').fadeOut();
