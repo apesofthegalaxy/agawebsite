@@ -21,6 +21,11 @@
   src: url(LaserCorpsItalic-d95aE.otf);
   font-weight: 700;
 }
+@font-face {
+  font-family: Brave;
+  src: url(BraveEightyoneRegular-ZVGvm.ttf);
+  font-weight: 700;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -511,7 +516,7 @@ div.name:hover {
 }
 div.titles {
   font-family: SpaceQuest;
-  color: #acacac;
+  color: transparent;
   margin-top: 0.5em;
   text-align: center;
 }
@@ -762,14 +767,13 @@ margin-bottom: 14px;
   color: rgb(255, 246, 115);
   line-height: 33px;
   font-size: 19px;
-  background: rgb(109, 109, 109);
-  background: -webkit-linear-gradient(top,rgb(80, 80, 80) 1%,#414141 100%);
+  background: transparent;
 }
 
 .ac-container {
   width: 100%;
   margin: 10px auto 30px auto;
-  text-align: center;
+  text-align: left;
 }
 
 .ac-container label:hover {
@@ -816,7 +820,7 @@ margin-bottom: 14px;
   line-height: 35px;
   font-size: 20px;
   padding: 20px;
-  font-family: SpaceQuest;
+  font-family: Brave;
 
 }
 
