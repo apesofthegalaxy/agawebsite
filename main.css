@@ -793,9 +793,7 @@ margin-bottom: 14px;
   top: 7px;
 }
 
-.ac-container input:checked + label:hover:after {
-  background-image: url(../images/arrow_up.png);
-}
+
 
 .ac-container input {
   display: none;
@@ -808,11 +806,8 @@ margin-bottom: 14px;
   height: 0;
   position: relative;
   z-index: 10;
-  -webkit-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  -moz-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  -o-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  -ms-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-  transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+  transition: height 0.2s ease-in-out,box-shadow 0.1s linear;
+
 }
 
 .ac-container article p {
@@ -822,16 +817,9 @@ margin-bottom: 14px;
   font-size: 20px;
   padding: 20px;
   font-family: SpaceQuest;
+
 }
 
-.ac-container input:checked ~ article {
-  -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  -ms-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  box-shadow: 0 0 0 1px rgba(155,155,155,0.3);
-}
 
 .ac-container input:checked ~ article.ac-small {
   height: 140px;
