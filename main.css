@@ -741,3 +741,106 @@ margin-bottom: 14px;
 }
 }
 
+
+/*Acco*/
+.ac-container {
+  max-width: 80%;
+}
+
+.ac-container label {
+  margin-bottom: 10px;
+  height: 50px !important;
+  line-height: 35px !important;
+  font-size: 25px !important;
+  font-family: SpaceQuest;
+  padding: 5px 20px;
+  position: relative;
+  z-index: 20;
+  display: block;
+  height: 30px;
+  cursor: pointer;
+  color: rgb(255, 246, 115);
+  line-height: 33px;
+  font-size: 19px;
+  background: rgb(109, 109, 109);
+  background: -webkit-linear-gradient(top,rgb(80, 80, 80) 1%,#414141 100%);
+}
+
+.ac-container {
+  width: 100%;
+  margin: 10px auto 30px auto;
+  text-align: center;
+}
+
+.ac-container label:hover {
+  background: rgb(141, 141, 141);
+}
+
+.ac-container input:checked + label,.ac-container input:checked + label:hover {
+  background: #cecece;
+  color: #666;
+  height: 30px;
+  line-height: 21px;
+  font-size: 30px;
+}
+
+.ac-container label:hover:after,.ac-container input:checked + label:hover:after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 13px;
+  top: 7px;
+}
+
+.ac-container input:checked + label:hover:after {
+  background-image: url(../images/arrow_up.png);
+}
+
+.ac-container input {
+  display: none;
+}
+
+.ac-container article {
+  background: rgba(32, 32, 32, 0.5);
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+  -moz-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+  -o-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+  -ms-transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+}
+
+.ac-container article p {
+  font-style: normal;
+  color: rgba(86, 173, 255, 0.719);
+  line-height: 35px;
+  font-size: 20px;
+  padding: 20px;
+  font-family: SpaceQuest;
+}
+
+.ac-container input:checked ~ article {
+  -webkit-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+  -moz-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+  -o-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+  -ms-transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+  transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+  box-shadow: 0 0 0 1px rgba(155,155,155,0.3);
+}
+
+.ac-container input:checked ~ article.ac-small {
+  height: 140px;
+}
+
+.ac-container input:checked ~ article.ac-medium {
+  height: 140px;
+}
+
+.ac-container input:checked ~ article.ac-large {
+  height: 140px;
+}
