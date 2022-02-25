@@ -64,7 +64,7 @@
         },
         loop: true,
         autoplay: {
-            delay: 1500,
+            delay: 500,
         },
     });
 

@@ -105,6 +105,7 @@ strong {
   font-weight: bolder;
 }
 
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -416,8 +417,9 @@ h6 {
 }
 
 img {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
+  border-radius: 50%;
 }
 
 a {
@@ -965,7 +967,7 @@ ol {
 
 .rating, .social, ul,
 ol {
-  padding-left: 0;
+  padding-left: 2;
 }
 
 .header {
@@ -1081,7 +1083,7 @@ ol {
   }
 }
 .social-btns .default-btn {
-  border-radius: 99px;
+  border-radius: 50px;
 }
 .social-btns .default-btn span {
   text-transform: capitalize;
@@ -1310,16 +1312,15 @@ ol {
 
 .default-btn {
   font-size: 0.875rem;
-  -webkit-border-raidus: 4px;
-  -moz-border-raidus: 4px;
-  -ms-border-raidus: 4px;
-  -o-border-raidus: 4px;
-  border-raidus: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   text-decoration: none;
   font-family: "Oxanium", cursive;
   color: #fff;
-  padding: 0 1.7rem;
-  line-height: 50px;
+  padding: 0.5rem;
   transform-origin: right;
   transition: all 0.3s ease;
   background: #8E2DE2;
@@ -1332,7 +1333,7 @@ ol {
 }
 @media (min-width: 768px) {
   .default-btn {
-    padding: 0 2.25rem;
+    padding: 0 0.5rem;
     line-height: 56px;
   }
 }
@@ -1554,7 +1555,7 @@ ol {
   }
 }
 .team__thumb img {
-  border-radius: 4px;
+  border-radius: 50%;
   width: 100%;
   object-fit: cover;
 }
