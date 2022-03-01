@@ -358,7 +358,6 @@ body {
   font-size: 1rem;
   line-height: 1.7;
   font-family: "Oxanium", cursive;
-  background-color: #060826;
 }
 
 h1,
@@ -417,9 +416,9 @@ h6 {
 }
 
 img {
-  max-width: 60%;
+  max-width: 70%;
   height: auto;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 a {
@@ -801,6 +800,21 @@ a {
   color: #8D59FF !important;
 }
 
+.gifs{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.gifimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 20%;
+
+}
+
 .padding-top {
   padding-top: 70px;
 }
@@ -824,12 +838,7 @@ a {
 }
 
 .bg__gradient {
-  background: #8E2DE2;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #060826;
 }
 .bg__gradient h1,
 .bg__gradient h2,
@@ -846,7 +855,7 @@ a {
 /* @@@@@@@@@@@@@  Extend Property CSS start here  @@@@@@@@@@@@@@ */
 .rating, .accordion__button, .roadmap__inner, .social, .social-btns {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .sale__brand_wrap, .sale__wrapper, .accordion__button .plus-icon, .roadmap__inner, .default-btn, .contact__form, .contact__wrapper, .navbar-toggler--icon {
@@ -985,7 +994,7 @@ ol {
   }
 }
 .header .navbar {
-  padding-block: 1.35rem;
+  padding-block: 0.35rem;
 }
 @media (min-width: 1200px) {
   .header .navbar-collapse {
@@ -1114,12 +1123,7 @@ ol {
 /*=-=-=-======< Section header end here >==========-=-=-=-*/
 .banner {
   padding-block: 75px;
-  background: #8E2DE2;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #4A00E0, #8E2DE2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f1241;
 }
 @media (min-width: 992px) {
   .banner {
