@@ -374,7 +374,7 @@ h6 {
 h1 {
   font-size: calc(1.575rem + 3.3428571429vw);
 }
-@media (min-width: 1400px) {
+@media (min-width: 100px) {
   h1 {
     font-size: 4.5rem;
   }
@@ -1280,10 +1280,10 @@ ol {
   background-color: #fff;
 }
 .footer .social__link svg {
-  color: #8D59FF;
+  color: #000000;
 }
 .footer .social__link:hover {
-  background-color: #000000;
+  background-color: #8d59ff;
 }
 
 .social {
